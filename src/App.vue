@@ -32,7 +32,11 @@ export default {
         <h2 class="text-xl font-medium text-ctp-subtext-1">@alyaura</h2>
         <div class="pt-2 text-md text-ctp-subtext0">
           Welcome to my personal corner of the internet! You can learn more
-          about me <a href="https://github.com/chloelyn">here</a>.
+          about me <a 
+            class="underline-offset-4 underline text-ctp-blue hover:text-ctp-lavender" 
+            target="_blank" 
+            href="https://github.com/chloelyn">
+            here</a>.
         </div>
       </div>
       <div class="flex flex-row space-x-3 pt-4">
