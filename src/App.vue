@@ -29,19 +29,19 @@ export default {
       </figure>
       <div class="text-center pt-4 max-w-md">
         <h1 class="pb-2 text-3xl text-ctp-text font-bold font-serif">Alaina</h1>
-        <h2 class="text-xl font-medium text-ctp-subtext-1">@alyaura</h2>
+        <h2 class="text-xl font-medium text-ctp-subtext-1">@alaidriel</h2>
         <div class="pt-2 text-md text-ctp-subtext0">
           Welcome to my personal corner of the internet! You can learn more
           about me <a 
             class="underline-offset-4 underline text-ctp-blue hover:text-ctp-lavender" 
             target="_blank" 
-            href="https://github.com/chloelyn">
+            href="https://github.com/alaidriel">
             here</a>.
         </div>
       </div>
       <div class="flex flex-row space-x-3 pt-4">
         <a
-          href="https://github.com/chloelyn"
+          href="https://github.com/alaidriel"
           class="rounded-md bg-ctp-surface0 transition-all p-1 pt-[7px] w-10 h-10 hover:bg-ctp-overlay0 text-center"
           aria-label="GitHub"
           target="_blank"
