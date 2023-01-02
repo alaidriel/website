@@ -1,7 +1,5 @@
-# Vue 3 + Vite
+# website
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is the latest edition of my personal website, hosted by [Vercel](https://vercel.com) at [alyaura.vercel.app](https://alyaura.vercel.app).
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The site is written using [Vue](https://vuejs.org) + [Vite](https://vitejs.dev). Styling is done with [Tailwind CSS](https://tailwindcss.com), using [Catppuccin (Latte)](https://catppuccin.com) as the color palette.
