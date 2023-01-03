@@ -1,11 +1,9 @@
 <script>
-import Navbar from "./components/Navbar.vue";
 import GitHub from "./components/GitHub.vue";
 import Mastodon from "./components/Mastodon.vue";
 
 export default {
   components: {
-    Navbar,
     GitHub,
     Mastodon,
   },
@@ -14,7 +12,6 @@ export default {
 
 <template>
   <h1 class="container mx-auto p-10 max-w-screen-md">
-    <Navbar />
     <div
       class="flex flex-col justify-center items-center align-center pt-[20vh]"
     >
@@ -31,12 +28,8 @@ export default {
         <h1 class="pb-2 text-3xl text-ctp-text font-bold font-serif">Alaina</h1>
         <h2 class="text-xl font-medium text-ctp-subtext-1">@alaidriel</h2>
         <div class="pt-2 text-md text-ctp-subtext0">
-          Welcome to my personal corner of the internet! You can learn more
-          about me <a 
-            class="underline-offset-4 underline text-ctp-blue hover:text-ctp-lavender" 
-            target="_blank" 
-            href="https://github.com/alaidriel">
-            here</a>.
+          Hi! I'm Alaina, or Aly (she/her 🏳️‍⚧️), a trans girl enamored with cs with a passion for programming.
+          There isn't much here~
         </div>
       </div>
       <div class="flex flex-row space-x-3 pt-4">
