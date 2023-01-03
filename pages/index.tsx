@@ -29,7 +29,7 @@ export default function Home() {
             </h3>
             <div className="pt-2 text-md text-ctp-subtext0 leading-7">
               Hi! I'm Alaina, or Aly (she/her 🏳️‍⚧️), a trans girl enamored with cs
-              with a passion for programming. I have a small blog <Link href="/blog" className="text-ctp-blue underline">here</Link>.
+              with a passion for programming. I have a small blog <Link href="/posts" className="text-ctp-blue underline">here</Link>.
             </div>
           </div>
           <div className="flex flex-row space-x-3 pt-4">
