@@ -190,4 +190,4 @@ Thanks for reading!
 
 ## Resources
 
-- I found a lot of the overlay examples on the internet difficult to parse, so here's my full (simple) overlay example: [https://github.com/alaidriel/nix-overlay](https://github.com/alaidriel/nix-overlay).
+- I found a lot of the overlay examples on the internet difficult to parse, so here's my full (simple) overlay example: [https://github.com/alaidriel/nix-overlay](https://github.com/alaidriel/nix-overlay/tree/bc544eeaa7eecb106467151327c34b4225f438fc).
