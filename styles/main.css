@@ -3,15 +3,15 @@
 @tailwind components;
 
 @font-face {
-  font-family: 'Cascadia Code';
+  font-family: "Cascadia Code";
   font-style: normal;
   font-weight: 100 900;
   font-display: block;
-  src: url(/fonts/cascadia-code.woff2) format('woff2');
+  src: url(/fonts/cascadia-code.woff2) format("woff2");
 }
 
 pre code span {
-  font-family: 'Cascadia Code', monospace;
+  font-family: "Cascadia Code", monospace;
 }
 
 .dark {
@@ -23,13 +23,17 @@ pre code span {
   --shiki-token-keyword: rgba(var(--ctp-mauve), var(--tw-text-opacity));
   --shiki-token-parameter: rgba(var(--ctp-maroon), var(--tw-text-opacity));
   --shiki-token-function: rgba(var(--ctp-blue), var(--tw-text-opacity));
-  --shiki-token-string-expression: rgba(var(--ctp-green), var(--tw-text-opacity));
+  --shiki-token-string-expression: rgba(
+    var(--ctp-green),
+    var(--tw-text-opacity)
+  );
   --shiki-token-punctuation: rgba(var(--ctp-overlay2), var(--tw-text-opacity));
   --shiki-token-link: rgba(var(--ctp-peach), var(--tw-text-opacity));
 }
 
 html,
-body {
+body,
+li {
   @apply text-ctp-text bg-ctp-base;
 }
 
@@ -49,46 +53,54 @@ img.next-image {
   margin: 0;
 }
 
-article 
-h1,
-article
-h2,
-article
-h3,
-article
-h4,
-article
-h5,
-article
-h6 {
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-mauve), var(--tw-text-opacity)) !important;
 }
 
 p > a,
 div .nx-flex .nx-gap-3 a,
-footer a {
+footer a,
+html[class~="dark"]
+  .dark\:nx-prose-dark
+  :where(a):not(:where([class~="nx-not-prose"] *)) {
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-blue), var(--tw-text-opacity)) !important;
   @apply underline;
 }
 
-/* article p {
+.subheading-anchor:after,
+html[class~="dark"] .subheading-anchor:after,
+html[class~="dark"] span:target + .subheading-anchor:after {
+  --tw-content: "#";
+  @apply pr-2 text-ctp-overlay0;
+}
+
+code {
   --tw-text-opacity: 1;
-  color: rgba(var(--ctp-subtext0), var(--tw-text-opacity)) !important;
-} */
+  color: rgba(var(--ctp-pink), var(--tw-text-opacity)) !important;
+  background-color: rgba(var(--ctp-mantle), var(--tw-text-opacity)) !important;
+}
 
 .nx-text-gray-400 {
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-subtext1), var(--tw-text-opacity)) !important;
 }
 
-.nx-text-gray-300,  .nx-not-prose  {
+.nx-text-gray-300,
+.nx-not-prose {
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-subtext0), var(--tw-text-opacity)) !important;
 }
 
-html article p, footer small, strong {
+html article p,
+footer small,
+strong {
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-text), var(--tw-text-opacity)) !important;
 }
@@ -100,15 +112,34 @@ html article p, footer small, strong {
 
 .nx-bg-gray-200 {
   --tw-text-opacity: 1;
-  background-color: rgba(var(--ctp-surface0), var(--tw-text-opacity)) !important;
+  background-color: rgba(
+    var(--ctp-surface0),
+    var(--tw-text-opacity)
+  ) !important;
 }
 
 .nx-bg-gray-200:hover {
   --tw-text-opacity: 1;
-  background-color: rgba(var(--ctp-overlay0), var(--tw-text-opacity)) !important;
+  background-color: rgba(
+    var(--ctp-overlay0),
+    var(--tw-text-opacity)
+  ) !important;
 }
 
-code[data-language*=sh] .line span:first-child::before {
-  content: '$';
+code[data-language*="sh"] .line span:first-child::before {
+  content: "$";
   @apply pr-2 text-ctp-subtext0;
+}
+
+code .line.highlighted {
+  @apply bg-opacity-10 bg-ctp-blue;
+}
+
+html[class~="dark"] .dark\:nx-bg-primary-300\/10 {
+  @apply bg-ctp-mantle;
+}
+
+code[data-line-numbers] > .line:before {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-overlay0), var(--tw-text-opacity)) !important;
 }
