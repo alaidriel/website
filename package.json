@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build",
-    "start": "next start"
+    "build": "node ./scripts/gen-rss.js && node ./scripts/link.js && next build",
+    "start": "next start",
+    "clean": "find -maxdepth 1 -type l -delete"
   },
   "dependencies": {
     "@catppuccin/tailwindcss": "^0.1.1",
