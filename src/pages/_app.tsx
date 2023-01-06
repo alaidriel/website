@@ -1,7 +1,7 @@
 import "nextra-theme-blog/style.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import "../styles/main.css";
+import "../../styles/main.css";
 import { Inter } from "@next/font/google";
 
 const inter = Inter({ subsets: ['latin'] });
