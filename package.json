@@ -2,8 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "node ./scripts/gen-rss.js && node ./scripts/link.js && next build",
+    "build": "npm run link && npm run build:rss && next build",
     "start": "next start",
+    "link": "node ./scripts/link.js",
+    "build:rss": "node ./scripts/gen-rss.js",
     "clean": "find -maxdepth 1 -type l -delete"
   },
   "dependencies": {
