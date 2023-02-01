@@ -24,7 +24,7 @@ fn main() {
   /// omg it's me
   let me = Person {
     name: "Alaina",
-    description: "trans girl enamored with cs with a passion for programming",
+    description: "aspiring cs student with a passion for programming",
     pronouns: ["she", "her"],
   };
 
